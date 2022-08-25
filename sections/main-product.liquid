@@ -197,6 +197,8 @@
           </slider-component>
         {%- endif -%}
       </media-gallery>
+
+      {% render 'single-description-os2' %}
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
@@ -206,6 +208,8 @@
           {%- case block.type -%}
           {%- when '@app' -%}
             {% render block %}
+          {%- when 'single-tracks' -%}
+            {% render 'single-tracks-os2' %}
           {%- when 'text' -%}
             <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
@@ -677,6 +681,11 @@
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
         }
       ]
+    },
+    {
+      "type": "single-tracks",
+      "name": "Single Tracks",
+      "limit": 1
     },
     {
       "type": "title",
