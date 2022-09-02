@@ -208,7 +208,7 @@
           {%- case block.type -%}
           {%- when '@app' -%}
             {% render block %}
-          {%- when 'single-tracks' -%}
+          {%- when 'single-music-tracks' -%}
             {% render 'single-music-tracks' %}
           {%- when 'text' -%}
             <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
@@ -683,8 +683,8 @@
       ]
     },
     {
-      "type": "single-tracks",
-      "name": "Single Tracks",
+      "type": "single-music-tracks",
+      "name": "Single Music Tracks",
       "limit": 1
     },
     {

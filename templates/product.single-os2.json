@@ -43,8 +43,8 @@
             "show_dynamic_checkout": true
           }
         },
-        "single-tracks": {
-          "type": "single-tracks",
+        "single-music-tracks": {
+          "type": "single-music-tracks",
           "settings": {}
         },
         "description": {
@@ -107,7 +107,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "single-tracks",
+        "single-music-tracks",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -221,8 +221,8 @@
         "padding_bottom": 28
       }
     },
-    "16613869353abe79c8": {
-      "type": "single-player-os2",
+    "single-music-player": {
+      "type": "single-music-player",
       "settings": {}
     }
   },
@@ -231,6 +231,6 @@
     "image-with-text",
     "multicolumn",
     "product-recommendations",
-    "16613869353abe79c8"
+    "single-music-player"
   ]
 }
