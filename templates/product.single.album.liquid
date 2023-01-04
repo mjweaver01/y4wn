@@ -289,13 +289,14 @@
 
 {% if enablePlayer == "true" %}
   {% include 'single-footer-player' %}
-  <script src='https://unpkg.com/wavesurfer.js'></script>
+  {% include 'single-wavesurfer' %}
   <script>
     var singleAlbumPlayer = {
       // Declare vars
       links: document.querySelectorAll('#playlist a'),
       currentTrack: 0,
       currentTrackData: false,
+      ignoreSilenceMode: true,
       hasLoaded: false,
       wavesurfer: WaveSurfer.create({
         container: '#waveform',
